@@ -45,7 +45,7 @@ class Day1 {
         int totalDistance = 0;
 
         if (first.isEmpty() || second.isEmpty() || first.size() != second.size()) {
-            return totalDistance;
+            return -1;
         }
 
         Collections.sort(first);
@@ -62,7 +62,7 @@ class Day1 {
         int similarityScore = 0;
 
         if (first.isEmpty() || second.isEmpty()) {
-            return similarityScore;
+            return -1;
         }
 
         Map<String, Integer> frequencyMap = new HashMap<>();
