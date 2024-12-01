@@ -44,7 +44,7 @@ class Day1 {
     public static int findTotalDistance(List<String> first, List<String> second) {
         int totalDistance = 0;
 
-        if (first.isEmpty() || second.isEmpty()) {
+        if (first.isEmpty() || second.isEmpty() || first.size() != second.size()) {
             return totalDistance;
         }
 
